@@ -20,5 +20,7 @@ public class Movement : MonoBehaviour {
     void OnMouseDrag()
     {
          transform.position = Camera.main.ScreenToWorldPoint(new Vector3(posX, posY, 10.0f));
+		transform.position = new Vector3 (0, transform.position.y, transform.position.z);
+
     }
 }
